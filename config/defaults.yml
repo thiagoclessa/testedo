@@ -1,0 +1,13 @@
+---
+cluster_name: "testedo"
+cluster_region: "nyc3"
+prefix_version: "1.27"
+node_pool_default:
+  name: testedo-node-pool
+  size: s-2vcpu-2gb
+  node_count: "2"
+additional_node_pools: {}
+users_list:
+  - name: root-user
+    role: root
+tags: ["VKPR", "k8s-digitalocean"]
